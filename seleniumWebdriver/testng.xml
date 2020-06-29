@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+<listeners>
+
+   <listener class-name="com.selenium.demo.extent.ExtentTestNGITestListener" />
+
+</listeners>
+
+	<test name="Testing Of The-Internet">
+
+		<classes>
+		
+            <class name="com.selenium.demo.tests.TestHomePage" />
+            
+			<class name="com.selenium.demo.tests.TestABElements" />
+
+			<class name="com.selenium.demo.tests.TestARElements" />
+
+			<class name="com.selenium.demo.tests.CheckBoxPageTest" />
+
+			<class name="com.selenium.demo.tests.BasicAuthTest" />
+
+			<class name="com.selenium.demo.tests.ContextMenuPageTest" />
+
+			<class name="com.selenium.demo.tests.DisAppearingElePageTest" />
+
+			<class name="com.selenium.demo.tests.DragAndDropPageTest" />
+
+			<class name="com.selenium.demo.tests.DropDownPageTest" />
+
+
+</classes>
+
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
