@@ -28,19 +28,15 @@ public class CheckBoxPage {
 
 	}
 
-	public String returnHeader() throws InterruptedException {
+	public String returnHeader(){
 
 		checkBoxlink.click();
-
-		Thread.sleep(1500);
 
 		return header.getText();
 
 	}
 
-	public boolean frstCheckBox() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public boolean frstCheckBox() {
 
 		if (!frstchbx.isSelected())
 
@@ -49,9 +45,7 @@ public class CheckBoxPage {
 
 	}
 
-	public boolean secndCheckBox() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public boolean secndCheckBox() {
 
 		if (!scndchbx.isSelected())
 

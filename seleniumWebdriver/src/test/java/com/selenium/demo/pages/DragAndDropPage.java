@@ -35,39 +35,39 @@ public class DragAndDropPage {
 
 	}
 
-	public void dragandDrop() throws InterruptedException {
-
-		dragadrop.click();
-
-		webdriverwait = WebDriverInit.webdriverwait;
-
-		Thread.sleep(1500);
-
-		
-		  WebElement headerAEle = webdriverwait
-		  
-		  .until(ExpectedConditions.visibilityOfElementLocated(src));
-		  
-		  WebElement headerBEle = webdriverwait
-		  
-		  .until(ExpectedConditions.visibilityOfElementLocated(dest));
-		 
-		action = new Actions(driver);
-
-		System.out.println(headerAEle.getText());
-
-		System.out.print(headerBEle.getText());
-
-		if (headerAEle.isDisplayed() && headerBEle.isDisplayed()) {
-
-			action.clickAndHold(headerAEle).moveToElement(headerBEle).release().build().perform();
-
-			System.out.print(headerBEle.getText());
-
-			Thread.sleep(1500);
-
-		}
-
-	}
-
+	  public void dragandDrop(){
+	  
+	  dragadrop.click();
+	  
+	  webdriverwait = WebDriverInit.webdriverwait;
+	  
+	  
+	  WebElement headerAEle = webdriverwait
+	  
+	  .until(ExpectedConditions.visibilityOfElementLocated(src));
+	  
+	  WebElement headerBEle = webdriverwait
+	  
+	  .until(ExpectedConditions.visibilityOfElementLocated(dest));
+	  
+	  action = new Actions(driver);
+	  
+	  System.out.println(headerAEle.getText());
+	  
+	  System.out.print(headerBEle.getText());
+	  
+	  if (headerAEle.isDisplayed() && headerBEle.isDisplayed()) {
+	  
+	  action.clickAndHold(headerAEle).moveToElement(headerBEle).release().build().
+	  perform();
+	  
+	  System.out.print(headerBEle.getText());
+	  
+	  Thread.sleep(1500);
+	  
+	  }
+	  
+	  }
+	  
+	
 }

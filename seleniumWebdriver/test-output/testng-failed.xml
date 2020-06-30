@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.selenium.demo.extent.ExtentTestNGITestListener"/>
-  </listeners>
-  <test thread-count="5" name="Testing Of The-Internet(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.demo.tests.DisAppearingElePageTest">
+      <class name="com.api.demo.testing.RestAPITesting">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="testGalleryButton"/>
-          <include name="closeDriver"/>
+          <include name="posttesting"/>
         </methods>
-      </class> <!-- com.selenium.demo.tests.DisAppearingElePageTest -->
+      </class> <!-- com.api.demo.testing.RestAPITesting -->
     </classes>
-  </test> <!-- Testing Of The-Internet(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

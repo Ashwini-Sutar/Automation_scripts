@@ -16,9 +16,9 @@ public class TestABElements extends WebDriverInit {
 
 	ABElements aBElements;
 
-	@Test(priority = 3)
+	@Test(priority = 3, description = "Header of the AB Elements should be A/B Test Control", groups= {"text"})
 
-	public void testHeader() throws InterruptedException {
+	public void testHeader(){
 
 		// ExtentTest test = extent.createTest("Test Header", "Test Header Display");
 
@@ -30,9 +30,9 @@ public class TestABElements extends WebDriverInit {
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4, description = "Testing the content of the page", groups= {"text"})
 
-	public void testContent() throws InterruptedException {
+	public void testContent() {
 
 		String actualContent = "Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through).";
 

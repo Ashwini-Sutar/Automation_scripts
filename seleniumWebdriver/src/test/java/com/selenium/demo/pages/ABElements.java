@@ -25,19 +25,15 @@ public class ABElements {
 
 	}
 
-	public String returnHeader() throws InterruptedException {
+	public String returnHeader(){
 
 		abtest.click();
-
-		Thread.sleep(1500);
 
 		return heading.getText();
 
 	}
 
-	public String returnContent() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public String returnContent(){
 
 		return content.getText();
 

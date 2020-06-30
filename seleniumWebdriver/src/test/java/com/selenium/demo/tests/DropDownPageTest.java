@@ -14,9 +14,9 @@ public class DropDownPageTest extends WebDriverInit {
 
 	DropDownPage dropDownPage;
 
-	@Test(priority = 22)
+	@Test(priority = 22, description = "The header of the dropdown page should be dropdownList", groups= {"text"})
 
-	public void testHeaderOfDropDown() throws InterruptedException {
+	public void testHeaderOfDropDown(){
 
 		dropDownPage = PageFactory.initElements(driver, DropDownPage.class);
 
@@ -26,9 +26,9 @@ public class DropDownPageTest extends WebDriverInit {
 
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 23, description = "Test default value of dropdown", groups= {"text"})
 
-	public void testdefaultValue() throws InterruptedException {
+	public void testdefaultValue() {
 
 		String dfaultvalue = dropDownPage.returnDefaultText();
 
@@ -36,17 +36,17 @@ public class DropDownPageTest extends WebDriverInit {
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 24, description = "select option 1 value from dropdown", groups= {"clickevents"})
 
-	public void testOption1() throws InterruptedException {
+	public void testOption1() {
 
 		assertEquals(dropDownPage.selectOption1(), "Option 1");
 
 	}
 
-	@Test(priority = 25)
+	@Test(priority = 25, description= "select option2 from dropdown", groups= {"clickevents"})
 
-	public void testOption2() throws InterruptedException {
+	public void testOption2() {
 
 		assertEquals(dropDownPage.selectOption2(), "Option 2");
 

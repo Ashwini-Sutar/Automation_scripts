@@ -18,7 +18,7 @@ public class DragAndDropPageTest extends WebDriverInit {
 
 		dragAndDropPage = PageFactory.initElements(driver, DragAndDropPage.class);
 
-		dragAndDropPage.dragandDrop();
+		//dragAndDropPage.dragandDrop();
 
 	}
 

@@ -39,41 +39,33 @@ public class ContextMenuPage {
 
 	}
 
-	public String returnheader() throws InterruptedException {
+	public String returnheader() {
 
 		CntxtMenu.click();
-
-		Thread.sleep(1500);
 
 		return heading.getText();
 
 	}
 
-	public String returnfirstContent() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public String returnfirstContent() {
 
 		return fisrtLineContent.getText();
 
 	}
 
-	public String returnSecondContent() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public String returnSecondContent() {
 
 		return scndLineContent.getText();
 
 	}
 
-	public String alertBoxTesting() throws InterruptedException {
+	public String alertBoxTesting() {
 
 		Actions action = new Actions(driver);
 
 		action.contextClick(htspt).perform();
 
 		Alert alert = driver.switchTo().alert();
-
-		Thread.sleep(5000);
 
 		String alrtMesg = alert.getText();
 

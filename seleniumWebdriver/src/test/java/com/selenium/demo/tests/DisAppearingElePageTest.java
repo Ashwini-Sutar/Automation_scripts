@@ -14,10 +14,9 @@ public class DisAppearingElePageTest extends WebDriverInit {
 
 	DisAppearingPage disAppearingPage;
 
-	@Test(priority = 16)
+	@Test(priority = 16, description = "Click on about button Not Found should be displayed", groups= {"text"})
 
-	public void testAboutBox() throws InterruptedException {
-
+	public void testAboutBox(){
 		disAppearingPage = PageFactory.initElements(driver, DisAppearingPage.class);
 
 		String abtmesg = disAppearingPage.clickOnAbout();
@@ -26,9 +25,9 @@ public class DisAppearingElePageTest extends WebDriverInit {
 
 	}
 
-	@Test(priority = 17)
+	@Test(priority = 17, description = "Click on contact us button Not Found should be displayed",groups= {"clickevents"})
 
-	public void testContactUsButton() throws InterruptedException {
+	public void testContactUsButton()  {
 
 		String contMesg = disAppearingPage.clickOnContactUs();
 
@@ -36,9 +35,9 @@ public class DisAppearingElePageTest extends WebDriverInit {
 
 	}
 
-	@Test(priority = 18)
+	@Test(priority = 18,  description = "Click on portfolio button Not Found should be displayed", groups= {"clickevents"})
 
-	public void testPortfolio() throws InterruptedException {
+	public void testPortfolio(){
 
 		String portfolioMesg = disAppearingPage.clickOnportfolio();
 
@@ -46,9 +45,9 @@ public class DisAppearingElePageTest extends WebDriverInit {
 
 	}
 
-	@Test(priority = 19)
+	@Test(priority = 19,  description = "Click on gallery button Not Found should be displayed")
 
-	public void testGalleryButton() throws InterruptedException {
+	public void testGalleryButton() {
 
 		String galleryMesg = disAppearingPage.clickOnGalleryButton();
 
@@ -56,9 +55,9 @@ public class DisAppearingElePageTest extends WebDriverInit {
 
 	}
 
-	@Test(priority = 20)
+	@Test(priority = 20,  description = "Click on home button it should navigate to home page", groups= {"clickevents"})
 
-	public void testHomeButton() throws InterruptedException {
+	public void testHomeButton(){
 
 		String HomeMesg = disAppearingPage.clickOnHome();
 

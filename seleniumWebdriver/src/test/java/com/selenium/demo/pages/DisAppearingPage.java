@@ -20,6 +20,7 @@ public class DisAppearingPage extends WebDriverInit {
 
 	@FindBy(linkText = "Disappearing Elements")
 	WebElement disappearingElements;
+
 	
 	  By homeButton = By.linkText("Home");
 	  
@@ -32,6 +33,10 @@ public class DisAppearingPage extends WebDriverInit {
 	  By galleryButton = By.linkText("Gallery");
 	 
 
+	@FindBy(linkText = "Gallery")
+	WebElement galleryEle;
+
+	
 	@FindBy(tagName = "h1")
 	WebElement mesg;
 	String title;
@@ -42,13 +47,12 @@ public class DisAppearingPage extends WebDriverInit {
 
 	}
 
-	public String clickOnHome() throws InterruptedException {
+	public String clickOnHome() {
 
 		webdriverwait = WebDriverInit.webdriverwait;
 
-		Thread.sleep(1500);
-
-		WebElement homeEle = webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(homeButton));
+		 WebElement homeEle =
+		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(homeButton));
 
 		if (homeEle.isDisplayed())
 
@@ -58,15 +62,14 @@ public class DisAppearingPage extends WebDriverInit {
 
 	}
 
-	public String clickOnAbout() throws InterruptedException {
+	public String clickOnAbout() {
 
 		disappearingElements.click();
 
 		webdriverwait = WebDriverInit.webdriverwait;
 
-		Thread.sleep(1500);
-
-     	WebElement abtEle = webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(aboutButton));
+		 WebElement abtEle =
+		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(aboutButton));
 
 		if (abtEle.isDisplayed())
 
@@ -80,13 +83,13 @@ public class DisAppearingPage extends WebDriverInit {
 
 	}
 
-	public String clickOnContactUs() throws InterruptedException {
+	public String clickOnContactUs()
+	{
 
 		webdriverwait = WebDriverInit.webdriverwait;
 
-		Thread.sleep(1500);
-
-		WebElement contactEle = webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(contactUsButton));
+		 WebElement contactEle =
+		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(contactUsButton));
 
 		if (contactEle.isDisplayed())
 
@@ -100,13 +103,12 @@ public class DisAppearingPage extends WebDriverInit {
 
 	}
 
-	public String clickOnportfolio() throws InterruptedException {
+	public String clickOnportfolio() {
 
 		webdriverwait = WebDriverInit.webdriverwait;
 
-		Thread.sleep(1500);
-
-		WebElement portfolio = webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(portfolioButton));
+		 WebElement portfolio =
+		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(portfolioButton));
 
 		if (portfolio.isDisplayed())
 
@@ -120,13 +122,12 @@ public class DisAppearingPage extends WebDriverInit {
 
 	}
 
-	public String clickOnGalleryButton() throws InterruptedException {
+	public String clickOnGalleryButton() {
 
 		webdriverwait = WebDriverInit.webdriverwait;
 
-		Thread.sleep(1500);
-
-		WebElement galleryEle = webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(galleryButton));
+		// WebElement galleryEle =
+		// webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(galleryButton));
 
 		if (galleryEle.isDisplayed())
 

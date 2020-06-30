@@ -33,9 +33,7 @@ public class HomePage {
 	@FindBy(tagName = "a")
 	List<WebElement> allHomePagelink;
 
-	public String firstHeaderCheck() throws InterruptedException {
-
-		Thread.sleep(500);
+	public String firstHeaderCheck() {
 
 		System.out.print(firstHeader.getText());
 
@@ -43,19 +41,15 @@ public class HomePage {
 
 	}
 
-	public String secondHeaderCheck() throws InterruptedException {
-
-		Thread.sleep(500);
+	public String secondHeaderCheck(){
 
 		return secondHeader.getText();
 
 	}
 
-	public void clickOnLink() throws InterruptedException {
+	public void clickOnLink() {
 	    
 		System.out.print(allHomePagelink.size());
-
-		Thread.sleep(1500);
 
 		for (int i = 0; i < allHomePagelink.size(); i++)
 
@@ -71,8 +65,6 @@ public class HomePage {
 				allHomePagelink.get(i).click();
 				
 				  assertNotEquals(driver.getCurrentUrl(), "http://the-internet.herokuapp.com/");
-				
-				Thread.sleep(1000);
 
 				driver.navigate().back();
 
@@ -81,8 +73,6 @@ public class HomePage {
 			}
 
 		}
-
-		Thread.sleep(3000);
 
 	}
 

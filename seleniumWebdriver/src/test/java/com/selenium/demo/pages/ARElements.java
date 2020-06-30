@@ -21,10 +21,12 @@ public class ARElements extends WebDriverInit {
 
 	@FindBy(tagName = "h3")
 	WebElement heading;
-
-	By addButton = By.tagName("button");
-
-	By deleteButton = By.className("added-manually");
+	
+	
+	  By addButton = By.tagName("button");
+	  
+	  By deleteButton = By.className("added-manually");
+	 
 
 	public ARElements(WebDriver driver) {
 
@@ -32,19 +34,15 @@ public class ARElements extends WebDriverInit {
 
 	}
 
-	public String returnHeader() throws InterruptedException {
+	public String returnHeader() {
 
 		arlink.click();
-
-		Thread.sleep(1500);
 
 		return heading.getText();
 
 	}
 
-	public boolean addButton() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public boolean addButton() {
 
 		WebElement addele = webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(addButton));
 
@@ -58,21 +56,17 @@ public class ARElements extends WebDriverInit {
 
 	}
 
-	public boolean deleleTesting() throws InterruptedException {
+	public boolean deleleTesting() {
 
-		Thread.sleep(1500);
-
-		 WebElement delele =
-		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(deleteButton));
+		 WebElement delele 	= webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(deleteButton));
 
 		if (delele.isDisplayed())
 
 			delele.click();
 
-		 WebElement addele =
-		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(addButton));
+		 WebElement addele =  webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(addButton));
 
-		return addele.isDisplayed();
+	return	 addele.isDisplayed();
 
 	}
 

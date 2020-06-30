@@ -19,9 +19,7 @@ public class BasicAuthPage {
 
 	}
 
-	public String loginMesg() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public String loginMesg() {
 
 		return loginMesg.getText();
 

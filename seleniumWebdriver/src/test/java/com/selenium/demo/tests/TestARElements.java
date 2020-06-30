@@ -16,9 +16,9 @@ public class TestARElements extends WebDriverInit {
 
 	ARElements aRElements;
 
-	@Test(priority = 5)
+	@Test(priority = 5, description = "Heading of the page should be Add/ Remove Elements", groups= {"text"})
 
-	public void testHeader() throws InterruptedException {
+	public void testHeader() {
 
 		aRElements = PageFactory.initElements(driver, ARElements.class);
 
@@ -28,17 +28,17 @@ public class TestARElements extends WebDriverInit {
 
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, description = "Clicking on add button and displaying remove button", groups= {"clickevents"})
 
-	public void testAddButton() throws InterruptedException {
+	public void testAddButton(){
 
 		assertTrue(aRElements.addButton());
 
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, description = "Clicking on delete button and hiding remove button", groups= {"clickevents"})
 
-	public void testDelButton() throws InterruptedException {
+	public void testDelButton(){
 
 		assertTrue(aRElements.deleleTesting());
 

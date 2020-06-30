@@ -6,11 +6,22 @@
   </listeners>
   <test thread-count="5" name="Testing Of The-Internet(failed)">
     <classes>
-      <class name="com.selenium.demo.tests.DisAppearingElePageTest">
+      <class name="com.selenium.demo.tests.BasicAuthTest">
         <methods>
           <include name="launchBrowser"/>
+          <include name="sucessTestAuthontication" invocation-numbers="1"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.selenium.demo.tests.BasicAuthTest -->
+      <class name="com.selenium.demo.tests.DisAppearingElePageTest">
+        <methods>
+          <include name="testHomeButton"/>
+          <include name="launchBrowser"/>
+          <include name="testAboutBox"/>
+          <include name="testContactUsButton"/>
           <include name="testGalleryButton"/>
           <include name="closeDriver"/>
+          <include name="testPortfolio"/>
         </methods>
       </class> <!-- com.selenium.demo.tests.DisAppearingElePageTest -->
     </classes>

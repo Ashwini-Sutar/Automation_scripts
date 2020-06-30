@@ -118,7 +118,7 @@ public class ExtentTestNGITestListener implements IReporter {
 
 				else {
 
-					test.log(status, "Test " + status.toString().toLowerCase() + "ed");
+					test.log(status, "TEST PASSED: "+result.getMethod().getDescription());
 
 				}
 

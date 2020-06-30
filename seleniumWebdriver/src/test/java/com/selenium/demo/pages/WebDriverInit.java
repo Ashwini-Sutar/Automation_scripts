@@ -40,7 +40,7 @@ public class WebDriverInit {
         
 	    webdriverwait = new WebDriverWait(driver, 30);
 		  
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		driver.get(AppUrl);
 

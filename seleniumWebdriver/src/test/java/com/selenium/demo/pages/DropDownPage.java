@@ -33,19 +33,15 @@ public class DropDownPage {
 		this.driver = driver;
 	}
 
-	public String returnHeader() throws InterruptedException {
+	public String returnHeader() {
 
 		dropdown.click();
-
-		Thread.sleep(1500);
 
 		return header.getText();
 
 	}
 
-	public String returnDefaultText() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public String returnDefaultText() {
 
 		select = new Select(drpdwn);
 
@@ -53,9 +49,7 @@ public class DropDownPage {
 
 	}
 
-	public String selectOption1() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public String selectOption1() {
 
 		allOptions = select.getOptions();
 
@@ -69,9 +63,7 @@ public class DropDownPage {
 
 	}
 
-	public String selectOption2() throws InterruptedException {
-
-		Thread.sleep(1500);
+	public String selectOption2() {
 
 		for (WebElement element : allOptions)
 

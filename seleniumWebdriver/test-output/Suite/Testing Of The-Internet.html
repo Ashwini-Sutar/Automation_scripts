@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Testing Of The-Internet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>25/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/1/5</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 29 11:09:51 IST 2020</td>
+<td>Started on:</td><td>Mon Jun 29 18:46:25 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>522 seconds (522266 ms)</td>
+<tr><td>Total time:</td><td>762 seconds (762798 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,47 +68,36 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.selenium.demo.tests.DisAppearingElePageTest.testGalleryButton()'><b>testGalleryButton</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Gallery
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<td title='com.selenium.demo.tests.DisAppearingElePageTest.launchBrowser()'><b>launchBrowser</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 13128, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1afc4edb-90af-4715-b263-777ed4b3bb53
-*** Element info: {Using=link text, value=Gallery}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.selenium.demo.pages.DisAppearingPage.clickOnGalleryButton(DisAppearingPage.java:147)
-	at com.selenium.demo.tests.DisAppearingElePageTest.testGalleryButton(DisAppearingElePageTest.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2050247525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2050247525'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Gallery
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526866775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526866775'><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 13128, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1afc4edb-90af-4715-b263-777ed4b3bb53
-*** Element info: {Using=link text, value=Gallery}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -119,15 +108,104 @@ Session ID: 1afc4edb-90af-4715-b263-777ed4b3bb53
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>47</td>
+<td>com.selenium.demo.tests.DisAppearingElePageTest@467aecef</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.demo.tests.DisAppearingElePageTest.closeDriver()'><b>closeDriver</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest</td>
+<td></td>
+<td>-1593437221</td>
+<td>com.selenium.demo.tests.DisAppearingElePageTest@467aecef</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.demo.tests.BasicAuthTest.sucessTestAuthontication()'><b>sucessTestAuthontication</b><br>Test class: com.selenium.demo.tests.BasicAuthTest<br>Test method: authontication testing<br>Parameters: admin1, admin1</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: http://the-internet.herokuapp.com is requesting your username and password. The site says: “Restricted Area”: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7212, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b774bf5-cc2a-4e53-b35f-326f05bf6d0e
+*** Element info: {Using=tag name, value=p}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:396)
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:320)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.selenium.demo.pages.DisAppearingPage.clickOnGalleryButton(DisAppearingPage.java:147)
-	at com.selenium.demo.tests.DisAppearingElePageTest.testGalleryButton(DisAppearingElePageTest.java:53)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.selenium.demo.pages.BasicAuthPage.loginMesg(BasicAuthPage.java:24)
+	at com.selenium.demo.tests.BasicAuthTest.sucessTestAuthontication(BasicAuthTest.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1247866422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1247866422'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: http://the-internet.herokuapp.com is requesting your username and password. The site says: “Restricted Area”: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7212, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b774bf5-cc2a-4e53-b35f-326f05bf6d0e
+*** Element info: {Using=tag name, value=p}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:396)
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:320)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.selenium.demo.pages.BasicAuthPage.loginMesg(BasicAuthPage.java:24)
+	at com.selenium.demo.tests.BasicAuthTest.sucessTestAuthontication(BasicAuthTest.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,8 +235,8 @@ Session ID: 1afc4edb-90af-4715-b263-777ed4b3bb53
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>61</td>
-<td>com.selenium.demo.tests.DisAppearingElePageTest@631330c</td></tr>
+<td>3</td>
+<td>com.selenium.demo.tests.BasicAuthTest@3cb1ffe6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -168,130 +246,438 @@ Session ID: 1afc4edb-90af-4715-b263-777ed4b3bb53
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.selenium.demo.tests.BasicAuthTest.sucessTestAuthontication()'><b>sucessTestAuthontication</b><br>Test class: com.selenium.demo.tests.BasicAuthTest</td>
+<td title='com.selenium.demo.tests.BasicAuthTest.sucessTestAuthontication()'><b>sucessTestAuthontication</b><br>Test class: com.selenium.demo.tests.BasicAuthTest<br>Test method: authontication testing<br>Parameters: admin, admin</td>
 <td></td>
-<td>6</td>
-<td>com.selenium.demo.tests.BasicAuthTest@1a8a8f7c</td></tr>
+<td>7</td>
+<td>com.selenium.demo.tests.BasicAuthTest@3cb1ffe6</td></tr>
 <tr>
-<td title='com.selenium.demo.tests.DisAppearingElePageTest.testAboutBox()'><b>testAboutBox</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest</td>
-<td></td>
-<td>4</td>
-<td>com.selenium.demo.tests.DisAppearingElePageTest@631330c</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.TestARElements.testAddButton()'><b>testAddButton</b><br>Test class: com.selenium.demo.tests.TestARElements</td>
-<td></td>
-<td>2</td>
-<td>com.selenium.demo.tests.TestARElements@6f195bc3</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.ContextMenuPageTest.testAlertBox()'><b>testAlertBox</b><br>Test class: com.selenium.demo.tests.ContextMenuPageTest</td>
-<td></td>
-<td>5</td>
-<td>com.selenium.demo.tests.ContextMenuPageTest@2353b3e6</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.DisAppearingElePageTest.testContactUsButton()'><b>testContactUsButton</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest</td>
-<td></td>
-<td>2</td>
-<td>com.selenium.demo.tests.DisAppearingElePageTest@631330c</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.TestABElements.testContent()'><b>testContent</b><br>Test class: com.selenium.demo.tests.TestABElements</td>
+<td title='com.selenium.demo.tests.TestARElements.testAddButton()'><b>testAddButton</b><br>Test class: com.selenium.demo.tests.TestARElements<br>Test method: Clicking on add button and displaying remove button</td>
 <td></td>
 <td>1</td>
-<td>com.selenium.demo.tests.TestABElements@7a187f14</td></tr>
+<td>com.selenium.demo.tests.TestARElements@7d70d1b1</td></tr>
 <tr>
-<td title='com.selenium.demo.tests.TestARElements.testDelButton()'><b>testDelButton</b><br>Test class: com.selenium.demo.tests.TestARElements</td>
+<td title='com.selenium.demo.tests.ContextMenuPageTest.testAlertBox()'><b>testAlertBox</b><br>Test class: com.selenium.demo.tests.ContextMenuPageTest<br>Test method: cliciking on context menu and verifying alert box message</td>
 <td></td>
 <td>1</td>
-<td>com.selenium.demo.tests.TestARElements@6f195bc3</td></tr>
+<td>com.selenium.demo.tests.ContextMenuPageTest@3dfc5fb8</td></tr>
 <tr>
-<td title='com.selenium.demo.tests.TestHomePage.testFirstHeader()'><b>testFirstHeader</b><br>Test class: com.selenium.demo.tests.TestHomePage</td>
+<td title='com.selenium.demo.tests.TestABElements.testContent()'><b>testContent</b><br>Test class: com.selenium.demo.tests.TestABElements<br>Test method: Testing the content of the page</td>
 <td></td>
 <td>0</td>
-<td>com.selenium.demo.tests.TestHomePage@307f6b8c</td></tr>
+<td>com.selenium.demo.tests.TestABElements@2a556333</td></tr>
 <tr>
-<td title='com.selenium.demo.tests.TestABElements.testHeader()'><b>testHeader</b><br>Test class: com.selenium.demo.tests.TestABElements</td>
-<td></td>
-<td>2</td>
-<td>com.selenium.demo.tests.TestABElements@7a187f14</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.TestARElements.testHeader()'><b>testHeader</b><br>Test class: com.selenium.demo.tests.TestARElements</td>
-<td></td>
-<td>2</td>
-<td>com.selenium.demo.tests.TestARElements@6f195bc3</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.CheckBoxPageTest.testHeaderCheckBox()'><b>testHeaderCheckBox</b><br>Test class: com.selenium.demo.tests.CheckBoxPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.selenium.demo.tests.CheckBoxPageTest@51e2adc7</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.ContextMenuPageTest.testHeaderCheckBox()'><b>testHeaderCheckBox</b><br>Test class: com.selenium.demo.tests.ContextMenuPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.selenium.demo.tests.ContextMenuPageTest@2353b3e6</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.DragAndDropPageTest.testHeaderCheckBox()'><b>testHeaderCheckBox</b><br>Test class: com.selenium.demo.tests.DragAndDropPageTest</td>
-<td></td>
-<td>4</td>
-<td>com.selenium.demo.tests.DragAndDropPageTest@42f93a98</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.DropDownPageTest.testHeaderOfDropDown()'><b>testHeaderOfDropDown</b><br>Test class: com.selenium.demo.tests.DropDownPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.selenium.demo.tests.DropDownPageTest@c46bcd4</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.DisAppearingElePageTest.testHomeButton()'><b>testHomeButton</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest</td>
-<td></td>
-<td>3</td>
-<td>com.selenium.demo.tests.DisAppearingElePageTest@631330c</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.DropDownPageTest.testOption1()'><b>testOption1</b><br>Test class: com.selenium.demo.tests.DropDownPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.selenium.demo.tests.DropDownPageTest@c46bcd4</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.DropDownPageTest.testOption2()'><b>testOption2</b><br>Test class: com.selenium.demo.tests.DropDownPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.selenium.demo.tests.DropDownPageTest@c46bcd4</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.DisAppearingElePageTest.testPortfolio()'><b>testPortfolio</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest</td>
-<td></td>
-<td>2</td>
-<td>com.selenium.demo.tests.DisAppearingElePageTest@631330c</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.CheckBoxPageTest.testSecndCheckBox()'><b>testSecndCheckBox</b><br>Test class: com.selenium.demo.tests.CheckBoxPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.selenium.demo.tests.CheckBoxPageTest@51e2adc7</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.ContextMenuPageTest.testSecndCheckBox()'><b>testSecndCheckBox</b><br>Test class: com.selenium.demo.tests.ContextMenuPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.selenium.demo.tests.ContextMenuPageTest@2353b3e6</td></tr>
-<tr>
-<td title='com.selenium.demo.tests.TestHomePage.testSecondHeader()'><b>testSecondHeader</b><br>Test class: com.selenium.demo.tests.TestHomePage</td>
+<td title='com.selenium.demo.tests.TestARElements.testDelButton()'><b>testDelButton</b><br>Test class: com.selenium.demo.tests.TestARElements<br>Test method: Clicking on delete button and hiding remove button</td>
 <td></td>
 <td>0</td>
-<td>com.selenium.demo.tests.TestHomePage@307f6b8c</td></tr>
+<td>com.selenium.demo.tests.TestARElements@7d70d1b1</td></tr>
 <tr>
-<td title='com.selenium.demo.tests.DropDownPageTest.testdefaultValue()'><b>testdefaultValue</b><br>Test class: com.selenium.demo.tests.DropDownPageTest</td>
+<td title='com.selenium.demo.tests.TestHomePage.testFirstHeader()'><b>testFirstHeader</b><br>Test class: com.selenium.demo.tests.TestHomePage<br>Test method: Tesing Header of home page and it should be Welcome to the-internet</td>
 <td></td>
 <td>1</td>
-<td>com.selenium.demo.tests.DropDownPageTest@c46bcd4</td></tr>
+<td>com.selenium.demo.tests.TestHomePage@480bdb19</td></tr>
 <tr>
-<td title='com.selenium.demo.tests.CheckBoxPageTest.testfrstCheckBox()'><b>testfrstCheckBox</b><br>Test class: com.selenium.demo.tests.CheckBoxPageTest</td>
+<td title='com.selenium.demo.tests.TestABElements.testHeader()'><b>testHeader</b><br>Test class: com.selenium.demo.tests.TestABElements<br>Test method: Header of the AB Elements should be A/B Test Control</td>
+<td></td>
+<td>2</td>
+<td>com.selenium.demo.tests.TestABElements@2a556333</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.TestARElements.testHeader()'><b>testHeader</b><br>Test class: com.selenium.demo.tests.TestARElements<br>Test method: Heading of the page should be Add/ Remove Elements</td>
+<td></td>
+<td>4</td>
+<td>com.selenium.demo.tests.TestARElements@7d70d1b1</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.CheckBoxPageTest.testHeaderCheckBox()'><b>testHeaderCheckBox</b><br>Test class: com.selenium.demo.tests.CheckBoxPageTest<br>Test method: Testing of Page heading and it should be Checkboxes</td>
+<td></td>
+<td>3</td>
+<td>com.selenium.demo.tests.CheckBoxPageTest@2a742aa2</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.ContextMenuPageTest.testHeaderCheckBox()'><b>testHeaderCheckBox</b><br>Test class: com.selenium.demo.tests.ContextMenuPageTest<br>Test method: Testing of Header and it should be Context Menu</td>
+<td></td>
+<td>10</td>
+<td>com.selenium.demo.tests.ContextMenuPageTest@3dfc5fb8</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.DropDownPageTest.testHeaderOfDropDown()'><b>testHeaderOfDropDown</b><br>Test class: com.selenium.demo.tests.DropDownPageTest<br>Test method: The header of the dropdown page should be dropdownList</td>
+<td></td>
+<td>13</td>
+<td>com.selenium.demo.tests.DropDownPageTest@4d50efb8</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.DropDownPageTest.testOption1()'><b>testOption1</b><br>Test class: com.selenium.demo.tests.DropDownPageTest<br>Test method: select option 1 value from dropdown</td>
 <td></td>
 <td>1</td>
-<td>com.selenium.demo.tests.CheckBoxPageTest@51e2adc7</td></tr>
+<td>com.selenium.demo.tests.DropDownPageTest@4d50efb8</td></tr>
 <tr>
-<td title='com.selenium.demo.tests.ContextMenuPageTest.testfrstStmt()'><b>testfrstStmt</b><br>Test class: com.selenium.demo.tests.ContextMenuPageTest</td>
+<td title='com.selenium.demo.tests.DropDownPageTest.testOption2()'><b>testOption2</b><br>Test class: com.selenium.demo.tests.DropDownPageTest<br>Test method: select option2 from dropdown</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.demo.tests.DropDownPageTest@4d50efb8</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.CheckBoxPageTest.testSecndCheckBox()'><b>testSecndCheckBox</b><br>Test class: com.selenium.demo.tests.CheckBoxPageTest<br>Test method: click on second checkbox</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.demo.tests.CheckBoxPageTest@2a742aa2</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.ContextMenuPageTest.testSecndContent()'><b>testSecndContent</b><br>Test class: com.selenium.demo.tests.ContextMenuPageTest<br>Test method: Testing of action mesg</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.demo.tests.ContextMenuPageTest@3dfc5fb8</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.TestHomePage.testSecondHeader()'><b>testSecondHeader</b><br>Test class: com.selenium.demo.tests.TestHomePage<br>Test method: testing secondnext header of the home page</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.demo.tests.TestHomePage@480bdb19</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.DropDownPageTest.testdefaultValue()'><b>testdefaultValue</b><br>Test class: com.selenium.demo.tests.DropDownPageTest<br>Test method: Test default value of dropdown</td>
 <td></td>
 <td>1</td>
-<td>com.selenium.demo.tests.ContextMenuPageTest@2353b3e6</td></tr>
+<td>com.selenium.demo.tests.DropDownPageTest@4d50efb8</td></tr>
 <tr>
-<td title='com.selenium.demo.tests.TestHomePage.tsetClickOnLink()'><b>tsetClickOnLink</b><br>Test class: com.selenium.demo.tests.TestHomePage</td>
+<td title='com.selenium.demo.tests.CheckBoxPageTest.testfrstCheckBox()'><b>testfrstCheckBox</b><br>Test class: com.selenium.demo.tests.CheckBoxPageTest<br>Test method: click on first checkbox</td>
 <td></td>
-<td>136</td>
-<td>com.selenium.demo.tests.TestHomePage@307f6b8c</td></tr>
+<td>0</td>
+<td>com.selenium.demo.tests.CheckBoxPageTest@2a742aa2</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.ContextMenuPageTest.testfrstStmt()'><b>testfrstStmt</b><br>Test class: com.selenium.demo.tests.ContextMenuPageTest<br>Test method: Testing of content in context menu page</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.demo.tests.ContextMenuPageTest@3dfc5fb8</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.TestHomePage.tsetClickOnLink()'><b>tsetClickOnLink</b><br>Test class: com.selenium.demo.tests.TestHomePage<br>Test method: Click on each link of the page test whether navigating to right URL or not</td>
+<td></td>
+<td>221</td>
+<td>com.selenium.demo.tests.TestHomePage@480bdb19</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.demo.tests.DisAppearingElePageTest.testAboutBox()'><b>testAboutBox</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest<br>Test method: Click on about button Not Found should be displayed</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace78816013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace78816013'><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.selenium.demo.tests.DisAppearingElePageTest@467aecef</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.DisAppearingElePageTest.testContactUsButton()'><b>testContactUsButton</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest<br>Test method: Click on contact us button Not Found should be displayed</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace841483227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace841483227'><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.selenium.demo.tests.DisAppearingElePageTest@467aecef</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.DisAppearingElePageTest.testGalleryButton()'><b>testGalleryButton</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest<br>Test method: Click on gallery button Not Found should be displayed</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1827371870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1827371870'><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.selenium.demo.tests.DisAppearingElePageTest@467aecef</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.DisAppearingElePageTest.testHomeButton()'><b>testHomeButton</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest<br>Test method: Click on home button it should navigate to home page</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2110785285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2110785285'><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.selenium.demo.tests.DisAppearingElePageTest@467aecef</td></tr>
+<tr>
+<td title='com.selenium.demo.tests.DisAppearingElePageTest.testPortfolio()'><b>testPortfolio</b><br>Test class: com.selenium.demo.tests.DisAppearingElePageTest<br>Test method: Click on portfolio button Not Found should be displayed</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1455064947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1455064947'><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//the-internet.herokuapp.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20the-internet.herokuapp.com.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-MEBP75C&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 6300, moz:profile: C:\Users\Ashwini\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 656ef1a1-f6d4-4639-a756-4371d96256e0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.selenium.demo.pages.WebDriverInit.launchBrowser(WebDriverInit.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.selenium.demo.tests.DisAppearingElePageTest@467aecef</td></tr>
 </table><p>
 </body>
 </html>
