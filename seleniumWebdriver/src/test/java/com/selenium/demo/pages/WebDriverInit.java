@@ -5,8 +5,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.NoSuchElementException;
 
 import org.testng.annotations.AfterClass;
 
@@ -16,7 +17,7 @@ public class WebDriverInit {
 
 	public static WebDriver driver;
 
-	public static WebDriverWait webdriverwait;
+	public static Wait<WebDriver> wait;
 
 	public static String AppUrl = "http://the-internet.herokuapp.com/";
 
@@ -38,7 +39,7 @@ public class WebDriverInit {
 		 * driver=new InternetExplorerDriver();
 		 */
         
-	    webdriverwait = new WebDriverWait(driver, 30);
+	    wait = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
 		  
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
