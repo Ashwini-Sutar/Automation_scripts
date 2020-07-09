@@ -13,65 +13,142 @@ import java.util.function.Function;
 public class DisAppearingPage extends WebDriverInit {
 
 	WebDriver driver;
-	WebElement delele;
-	WebElement addele;
+	WebElement homeEle;
+	WebElement galleryEle;
+	WebElement portfolio;
+	WebElement contactEle;
+	WebElement abtEle;
 
-	@FindBy(linkText = "Add/Remove Elements")
-	WebElement arlink;
+	WebDriverWait webdriverwait;
 
-	@FindBy(tagName = "h3")
-	WebElement heading;
+	@FindBy(linkText = "Disappearing Elements")
+	WebElement disappearingElements;
 
-	By addButton = By.tagName("button");
+	By homeButton = By.linkText("Home");
 
-	By deleteButton = By.className("added-manually");
+	By aboutButton = By.linkText("About");
 
-	public ARElements(WebDriver driver) {
+	By contactUsButton = By.linkText("Contact Us");
+
+	By portfolioButton = By.linkText("Portfolio");
+
+	By galleryButton = By.linkText("Gallery");
+
+	@FindBy(tagName = "h1")
+	WebElement mesg;
+	String title;
+
+	public DisAppearingPage(WebDriver driver) {
 
 		this.driver = driver;
 
 	}
 
-	public String returnHeader() {
+	public String clickOnHome() {
 
-		arlink.click();
-
-		return heading.getText();
-
-	}
-
-	public boolean addButton() {
-
-		addele = wait.until((new Function<WebDriver, WebElement>() {
+		homeEle = wait.until((new Function<WebDriver, WebElement>() {
 
 			public WebElement apply(WebDriver driver) {
-				return driver.findElement(addButton);
+				return driver.findElement(homeButton);
 			}
 
 		}));
 
-		if (addele.isDisplayed())
+		if (homeEle.isDisplayed())
 
-			addele.click();
+			homeEle.click();
 
-		delele = wait.until((new Function<WebDriver, WebElement>() {
-
-			public WebElement apply(WebDriver driver) {
-				return driver.findElement(deleteButton);
-			}
-
-		}));
-		return delele.isDisplayed();
+		return driver.getCurrentUrl();
 
 	}
 
-	public boolean deleleTesting() {
+	public String clickOnAbout() {
 
-		if (delele.isDisplayed())
+		disappearingElements.click();
 
-			delele.click();
+		abtEle = wait.until((new Function<WebDriver, WebElement>() {
 
-		return addele.isDisplayed();
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(aboutButton);
+			}
+
+		}));
+
+		if (abtEle.isDisplayed())
+
+			abtEle.click();
+
+		title = mesg.getText();
+
+		driver.navigate().back();
+
+		return title;
+
+	}
+
+	public String clickOnContactUs() {
+
+		contactEle = wait.until((new Function<WebDriver, WebElement>() {
+
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(contactUsButton);
+			}
+
+		}));
+
+		if (contactEle.isDisplayed())
+
+			contactEle.click();
+
+		title = mesg.getText();
+
+		driver.navigate().back();
+
+		return title;
+
+	}
+
+	public String clickOnportfolio() {
+
+		portfolio = wait.until((new Function<WebDriver, WebElement>() {
+
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(portfolioButton);
+			}
+
+		}));
+
+		if (portfolio.isDisplayed())
+
+			portfolio.click();
+
+		title = mesg.getText();
+
+		driver.navigate().back();
+
+		return title;
+
+	}
+
+	public String clickOnGalleryButton() {
+
+		galleryEle = wait.until((new Function<WebDriver, WebElement>() {
+
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(galleryButton);
+			}
+
+		}));
+
+		if (galleryEle.isDisplayed())
+
+			galleryEle.click();
+
+		title = mesg.getText();
+
+		driver.navigate().back();
+
+		return title;
 
 	}
 }
