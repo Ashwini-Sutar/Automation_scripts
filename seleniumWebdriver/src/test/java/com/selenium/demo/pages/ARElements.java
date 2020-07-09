@@ -8,25 +8,24 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.function.Function;
 
 public class ARElements extends WebDriverInit {
 
+	
 	WebDriver driver;
+	WebElement delele;
+	WebElement addele;
 
 	@FindBy(linkText = "Add/Remove Elements")
 	WebElement arlink;
 
 	@FindBy(tagName = "h3")
 	WebElement heading;
-	
-	
-	  By addButton = By.tagName("button");
-	  
-	  By deleteButton = By.className("added-manually");
-	 
+
+	By addButton = By.tagName("button");
+
+	By deleteButton = By.className("added-manually");
 
 	public ARElements(WebDriver driver) {
 
@@ -44,29 +43,36 @@ public class ARElements extends WebDriverInit {
 
 	public boolean addButton() {
 
-		WebElement addele = webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(addButton));
+		addele = wait.until((new Function<WebDriver, WebElement>() {
+
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(addButton);
+			}
+
+		}));
 
 		if (addele.isDisplayed())
 
 			addele.click();
 
-		WebElement delele = webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(deleteButton));
+		delele = wait.until((new Function<WebDriver, WebElement>() {
 
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(deleteButton);
+			}
+
+		}));
 		return delele.isDisplayed();
 
 	}
 
 	public boolean deleleTesting() {
 
-		 WebElement delele 	= webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(deleteButton));
-
 		if (delele.isDisplayed())
 
 			delele.click();
 
-		 WebElement addele =  webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(addButton));
-
-	return	 addele.isDisplayed();
+		return addele.isDisplayed();
 
 	}
 
