@@ -14,7 +14,7 @@ import java.util.function.Function;
 
 import com.selenium.demo.pages.WebDriverInit;
 
-public class DragAndDropPage extends WebDriverInit{
+public class DragAndDropPage{
 
 	private WebDriver driver;
 	
