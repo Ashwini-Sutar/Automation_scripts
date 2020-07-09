@@ -8,137 +8,70 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.function.Function;
 
 public class DisAppearingPage extends WebDriverInit {
 
 	WebDriver driver;
+	WebElement delele;
+	WebElement addele;
 
-	WebDriverWait webdriverwait;
+	@FindBy(linkText = "Add/Remove Elements")
+	WebElement arlink;
 
-	@FindBy(linkText = "Disappearing Elements")
-	WebElement disappearingElements;
+	@FindBy(tagName = "h3")
+	WebElement heading;
 
-	
-	  By homeButton = By.linkText("Home");
-	  
-	  By aboutButton = By.linkText("About");
-	  
-	  By contactUsButton = By.linkText("Contact Us");
-	  
-	  By portfolioButton = By.linkText("Portfolio");
-	  
-	  By galleryButton = By.linkText("Gallery");
-	 
+	By addButton = By.tagName("button");
 
-	@FindBy(linkText = "Gallery")
-	WebElement galleryEle;
+	By deleteButton = By.className("added-manually");
 
-	
-	@FindBy(tagName = "h1")
-	WebElement mesg;
-	String title;
-
-	public DisAppearingPage(WebDriver driver) {
+	public ARElements(WebDriver driver) {
 
 		this.driver = driver;
 
 	}
 
-	public String clickOnHome() {
+	public String returnHeader() {
 
-		webdriverwait = WebDriverInit.webdriverwait;
+		arlink.click();
 
-		 WebElement homeEle =
-		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(homeButton));
-
-		if (homeEle.isDisplayed())
-
-			homeEle.click();
-
-		return driver.getCurrentUrl();
+		return heading.getText();
 
 	}
 
-	public String clickOnAbout() {
+	public boolean addButton() {
 
-		disappearingElements.click();
+		addele = wait.until((new Function<WebDriver, WebElement>() {
 
-		webdriverwait = WebDriverInit.webdriverwait;
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(addButton);
+			}
 
-		 WebElement abtEle =
-		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(aboutButton));
+		}));
 
-		if (abtEle.isDisplayed())
+		if (addele.isDisplayed())
 
-			abtEle.click();
+			addele.click();
 
-		title = mesg.getText();
+		delele = wait.until((new Function<WebDriver, WebElement>() {
 
-		driver.navigate().back();
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(deleteButton);
+			}
 
-		return title;
-
-	}
-
-	public String clickOnContactUs()
-	{
-
-		webdriverwait = WebDriverInit.webdriverwait;
-
-		 WebElement contactEle =
-		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(contactUsButton));
-
-		if (contactEle.isDisplayed())
-
-			contactEle.click();
-
-		title = mesg.getText();
-
-		driver.navigate().back();
-
-		return title;
+		}));
+		return delele.isDisplayed();
 
 	}
 
-	public String clickOnportfolio() {
+	public boolean deleleTesting() {
 
-		webdriverwait = WebDriverInit.webdriverwait;
+		if (delele.isDisplayed())
 
-		 WebElement portfolio =
-		 webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(portfolioButton));
+			delele.click();
 
-		if (portfolio.isDisplayed())
-
-			portfolio.click();
-
-		title = mesg.getText();
-
-		driver.navigate().back();
-
-		return title;
+		return addele.isDisplayed();
 
 	}
-
-	public String clickOnGalleryButton() {
-
-		webdriverwait = WebDriverInit.webdriverwait;
-
-		// WebElement galleryEle =
-		// webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(galleryButton));
-
-		if (galleryEle.isDisplayed())
-
-			galleryEle.click();
-
-		title = mesg.getText();
-
-		driver.navigate().back();
-
-		return title;
-
-	}
-
 }
