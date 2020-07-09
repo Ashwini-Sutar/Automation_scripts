@@ -10,15 +10,16 @@ import org.openqa.selenium.interactions.Actions;
 
 import org.openqa.selenium.support.FindBy;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.util.function.Function;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
+import com.selenium.demo.pages.WebDriverInit;
 
-public class DragAndDropPage {
+public class DragAndDropPage extends WebDriverInit{
 
 	private WebDriver driver;
-
-	private WebDriverWait webdriverwait;
+	
+	WebElement headerBEle;
+	WebElement headerAEle;
 
 	private Actions action;
 
@@ -39,16 +40,21 @@ public class DragAndDropPage {
 	  
 	  dragadrop.click();
 	  
-	  webdriverwait = WebDriverInit.webdriverwait;
+	  headerAEle = wait.until((new Function<WebDriver, WebElement>() {
+
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(src);
+			}
+
+		}));
 	  
-	  
-	  WebElement headerAEle = webdriverwait
-	  
-	  .until(ExpectedConditions.visibilityOfElementLocated(src));
-	  
-	  WebElement headerBEle = webdriverwait
-	  
-	  .until(ExpectedConditions.visibilityOfElementLocated(dest));
+	  headerBEle = wait.until((new Function<WebDriver, WebElement>() {
+
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(dest);
+			}
+
+		}));
 	  
 	  action = new Actions(driver);
 	  
@@ -62,8 +68,6 @@ public class DragAndDropPage {
 	  perform();
 	  
 	  System.out.print(headerBEle.getText());
-	  
-	  Thread.sleep(1500);
 	  
 	  }
 	  
